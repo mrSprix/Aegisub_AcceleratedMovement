@@ -11,4 +11,9 @@ there shouldn't be two or more tags of the same type in the line.
 This is the first version of the script, and there may be many problems and room for development.
 If you encounter any bugs while using this script, please feel free to contact me at fr.3pehr@gmail.com
 or on Telegram at @mrSprix.
-https://github.com/mrSprix/Aegisub_Accelerated-Movement/assets/141914584/77776ec3-553d-42dc-a721-e47b2523c529
+
+Script introduction video:
+
+
+https://github.com/mrSprix/Aegisub_Accelerated-Movement/assets/141914584/428d6699-f428-4c31-88ff-f65320074eea
+
