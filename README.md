@@ -1,4 +1,4 @@
-# Aegisub_Accelerated-Movement
+# Aegisub_AcceleratedMovement
 This script can help you accelerate your moves.
 
 Note that this script is specifically designed for masks. Although
