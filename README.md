@@ -1,8 +1,4 @@
-# Aegisub_Accelerated-
-
-Uploading Aegisub_bjaiEwGv.mp4…
-
-Movement
+# Aegisub_Accelerated-Movement
 This script can help you accelerate your moves.
 
 Note that this script is specifically designed for masks. Although
@@ -15,3 +11,4 @@ there shouldn't be two or more tags of the same type in the line.
 This is the first version of the script, and there may be many problems and room for development.
 If you encounter any bugs while using this script, please feel free to contact me at fr.3pehr@gmail.com
 or on Telegram at @mrSprix.
+https://github.com/mrSprix/Aegisub_Accelerated-Movement/assets/141914584/77776ec3-553d-42dc-a721-e47b2523c529
