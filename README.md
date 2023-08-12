@@ -1,4 +1,4 @@
-# Aegisub_AcceleratedMovement
+# Aegisub_Accelerated-Movement
 This script can help you accelerate your moves.
 
 Note that this script is specifically designed for masks. Although
@@ -15,5 +15,5 @@ or on Telegram at @mrSprix.
 Script introduction video:
 
 
-https://github.com/mrSprix/Aegisub_Accelerated-Movement/assets/141914584/428d6699-f428-4c31-88ff-f65320074eea
+https://github.com/mrSprix/Aegisub_AcceleratedMovement/assets/141914584/fa592bf7-6566-4aab-b7ee-2ead19e481c4
 
