@@ -3,9 +3,7 @@ README:
 
 This script can help you accelerate your moves.
 
-Note that this script is specifically designed for masks. Although
-you can use it on text, the starting position of the result may be below
-the actual move. However, you can adjust that after running the script.
+
 This version of the script does NOT support inline tags. In other words,
 there shouldn't be two or more tags of the same type in the line.
 
@@ -19,7 +17,7 @@ or on Telegram at @mrSprix.
 script_name="Accelerated Movement"
 script_description="Helps you to accelerate your moves."
 script_author="Sprix"
-script_version="1.0"
+script_version="1.1"
 
 include("karaskel.lua")
 
@@ -60,13 +58,16 @@ function giveacc(sub, sel)
     local acc = res["acceleration"]
     local wid = line.height
     local hei = line.width
+    local des = line.descent
     if text1:match("\\fs[%d%.%-]") then
       local fs = text1:match("\\fs([%d%.%-]+)")
       fs = tonumber(fs)
       hei = hei * (fs / line.styleref.fontsize)
-      wid = fs
+      des = des * (fs / line.styleref.fontsize)
+      wid = wid * (fs / line.styleref.fontsize)
     end
     if text1:match("\\p") then
+      des = 0
       local popo = text1:match("m[ bl%d%.%-]+")
       local pp = {}
       local ppp = {}
@@ -139,6 +140,8 @@ function giveacc(sub, sel)
         fscyt = tonumber(fscyt)
         wid = wid / (line.styleref.scale_y / 100)
         wid = wid * (fscyt / 100)
+        des = des / (line.styleref.scale_y / 100)
+        des = des * (fscyt / 100)
       end
       if text1:match("\\fscx") then
         local fscxt = text1:match("\\fscx([%d%.%-]+)")
@@ -195,6 +198,7 @@ function giveacc(sub, sel)
       if align == 9 then
         npx = npx - w
       end
+      wid = wid - des
       nposx = npx - wid
       local fsposx = posx2 - posx1
       fsposx = fsposx / wid
@@ -237,6 +241,7 @@ function giveacc(sub, sel)
       if align == 8 then
         npx = npx + w2
       end
+      wid = wid - des
       nposx = npx + wid
       local fsposx = posx1 - posx2
       fsposx = fsposx / wid
@@ -280,7 +285,7 @@ function giveacc(sub, sel)
         npx = npx - w
       end
       nposx = npx - wid
-      nposy = npy + wid
+      nposy = npy + wid - des
       local fsposx = posx2 - posx1
       fsposx = fsposx / wid
       fsposx = fsposx + 1
@@ -323,7 +328,7 @@ function giveacc(sub, sel)
         npy = npy + h
       end
       nposx = npx + wid
-      nposy = npy + wid
+      nposy = npy + wid - des
       local fsposx = posx1 - posx2
       fsposx = fsposx / wid
       fsposx = fsposx + 1
