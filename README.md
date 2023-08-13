@@ -13,5 +13,5 @@ or on Telegram at @mrSprix.
 Script introduction video:
 
 
-https://github.com/mrSprix/Aegisub_AcceleratedMovement/assets/141914584/fa592bf7-6566-4aab-b7ee-2ead19e481c4
+https://github.com/mrSprix/Aegisub_AcceleratedMovement/assets/141914584/749f97a2-e2cd-40b0-9275-5d9d974e449f
 
