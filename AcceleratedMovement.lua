@@ -28,7 +28,7 @@ function giveaccg(sub, sel)
     {class="floatedit",name="acceleration",x=1,y=0,width=1,height=1,value=1}
   }
   buttons={"OK","Cancel"}
-  pressed,res=aegisub.dialog.display(dialog_config,buttons)
+  pressed,res=aegisub.dialog.display(dialog_config,buttons,{ok='OK',cancel='Cancel'})
   if pressed=="Cancel" then
     aegisub.cancel()
   end
