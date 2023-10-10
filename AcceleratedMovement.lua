@@ -12,6 +12,8 @@ This is the first version of the script, and there may be many problems and room
 If you encounter any bugs while using this script, please feel free to contact me at fr.3pehr@gmail.com
 or on Telegram at @mrSprix.
 
+Special thanks to PhoenixTetra who made it possible to accelerate moves with his wonderful idea.
+
 ]]
 
 script_name="Accelerated Movement"
